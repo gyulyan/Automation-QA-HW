@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <element class="header">
+    <span id="header-logo">
+            <img class="header-logo__img" src="C:\Users\TakuhiGyulyanSQAbg\Desktop\QA\logo.png" width="50" height="60">
+    </span>
+
+    <span id="header-search">
+            <input type="text" placeholder="Search projects">
+            <input type="submit">
+    </span>
+
+    <span class="header-menu">
+        <span id="menu-item"><a href="https://github.com/mihail-petrov-courses-netit/netit-automation-qa/blob/master/22-22/meet-02/hw/README.md">Documentation</div>
+        </span>
+        <span id="menu-item"><a href="https://github.com/mihail-petrov-courses-netit/netit-automation-qa/blob/master/22-22/meet-02/hw/README.md">Support</div>
+        </span>
+    </span>
+
+    <span>
+        <a href="https://github.com/mihail-petrov-courses-netit/netit-automation-qa/blob/master/22-22/meet-02/hw/imgs/hw2.png">
+        <img alt="MyProfile" src="C:\Users\TakuhiGyulyanSQAbg\Desktop\QA\pic.png" width="50" height="60">
+        </a>
+    </span>
+    </element>
+<br>
+<br>
+    <element class="sidebar">
+        <div class="sidebar-profile">
+            <div id="sidebar-profile__pic"><img src="C:\Users\TakuhiGyulyanSQAbg\Desktop\QA\pic.png" width="50" height="60"></img></div>
+            <div id="sidebar-profile__name">Debbie Lewis</div>
+            <div id="sidebar-profile__username">debbielewis</div>
+        </div>
+        <br>
+<div class="sidebar-menu">
+    <div id="sidebar-menu__button">
+        <form action="https://google.com">
+            <input type="submit" value="Create Project"/>
+        </form>
+    </div>
+    <br>
+    <div id="sidebar-menu__button">
+        <form action="https://google.com">
+            <input type="submit" value="Invite Team"/>
+        </form>
+    </div>
+<br>
+<div id="sidebar-menu__info">
+    <ul>
+        <li>Pro Member</li>
+        <li>8 Projects</li>
+    </ul>
+</div>
+</div>
+    </element>
+
+    <element class="main">
+        <h1 class="main">Projects</h1>
+        
+        <section class="main-profiles">
+            <section id="main-profiles__info">
+                <h3>Workcation</h3>
+                <span>debbielewis/workcation</span>
+                    <span>Laravel</span>
+                    <span>Last deploy 3h ago</span>
+                    <span>Unites States</span>
+                </span>
+        </section>
+<br>
+        <section class="main-profiles">
+            <section id="main-profiles__info">
+                <h3>Tailwind CSS</h3>
+                <span>debbielewis/tailwindcss</span>
+                    <span>Next.js</span>
+                    <span>Last deploy 6h ago</span>
+                    <span>Unites States</span>
+                </span>
+        </section>
+<br>
+        <section class="main-profiles">
+            <section id="main-profiles__info">
+                <h3>Kitetail</h3>
+                <span>debbielewis/kitetail</span>
+                    <span>Laravel</span>
+                    <span>Last deploy 4d ago</span>
+                    <span>Unites States</span>
+                </span>
+        </section>
+<br>
+        <section class="main-profiles">
+            <section id="main-profiles__info">
+                <h3>Refactoring UI</h3>
+                <span>debbielewis/refactoringui</span>
+                    <span>Laravel</span>
+                    <span>Last deploy 4d ago</span>
+                    <span>Unites States</span>
+                </span>
+        </section>
+<br>
+        <section class="main-profiles">
+            <section id="main-profiles__info">
+                <h3>Hero Patterns</h3>
+                <span>debbielewis/heropatterns</span>
+                    <span>Next.js</span>
+                    <span>Last deploy 6d ago</span>
+                    <span>Unites States</span>
+                </span>
+        </section>
+<br>
+        <section class="main-profiles">
+            <section id="main-profiles__info">
+                <h3>Hero Swatches</h3>
+                <span>debbielewis/heroswatches</span>
+                    <span>Next.js</span>
+                    <span>Last deploy 6d ago</span>
+                    <span>Unites States</span>
+                </span>
+        </section>
+    </element>
+
+    <element class="feed">
+        <h2 class="feed">Activity feed</h2>
+
+        <section class="feed-profiles">
+            <section id="feed-profiles__info">
+                <span id="pic"><img src="C:\Users\TakuhiGyulyanSQAbg\Desktop\QA\pic.png" width="60" height="50"></span>
+                <span id="name">You</span>
+                <span id="last seen">3h</span>
+                <div>Deployed workcation (27c83j in master) to production</span>
+        </section>
+        <section class="feed-profiles">
+            <section id="feed-profiles__info">
+                <span id="pic"><img src="C:\Users\TakuhiGyulyanSQAbg\Desktop\QA\pic.png" width="60" height="50"></span>
+                <span id="name">Tanya Pena</span>
+                <span id="last seen">6h</span>
+                <div>Deleted project Kitetail</span>
+        </section>
+        <section class="feed-profiles">
+            <section id="feed-profiles__info">
+                <span id="pic"><img src="C:\Users\TakuhiGyulyanSQAbg\Desktop\QA\pic.png" width="60" height="50"></span>
+                <span id="name">You</span>
+                <span id="last seen">4d</span>
+                <div>Deployed workcation (dc076a in master) to production</span>
+        </section>
+        <section class="feed-profiles">
+            <section id="feed-profiles__info">
+                <span id="pic"><img src="C:\Users\TakuhiGyulyanSQAbg\Desktop\QA\pic.png" width="60" height="50"></span>
+                <span id="name">Courtney Nguyen</span>
+                <span id="last seen">4d</span>
+                <div>Deployed workcation (27c83j in master) to production</span>
+        </section>
+        <section class="feed-profiles">
+            <section id="feed-profiles__info">
+                <span id="pic"><img src="C:\Users\TakuhiGyulyanSQAbg\Desktop\QA\pic.png" width="60" height="50"></span>
+                <span id="name">You</span>
+                <span id="last seen">4d</span>
+                <div>Deployed workcation (27c83j in master) to production</span>
+        </section>
+        <section class="feed-profiles">
+            <section id="feed-profiles__info">
+                <span id="pic"><img src="C:\Users\TakuhiGyulyanSQAbg\Desktop\QA\pic.png" width="60" height="50"></span>
+                <span id="name">Guy Webb</span>
+                <span id="last seen">6d</span>
+                <div>Deployed workcation (27c83j in master) to production</span>
+        </section>
+        <section class="feed-profiles">
+            <section id="feed-profiles__info">
+                <span id="pic"><img src="C:\Users\TakuhiGyulyanSQAbg\Desktop\QA\pic.png" width="60" height="50"></span>
+                <span id="name">Brandie Russell</span>
+                <span id="last seen">6d</span>
+                <div>Deployed workcation (27c83j in master) to production</span>
+        </section>
+    </element>
+
+</body>
+</html>

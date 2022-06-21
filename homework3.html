@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        alert("Мазе бот v1 на Вашите услуги");
+
+        let userFirstName     = prompt("Как се казваш - първо име ?");
+        let userSecondName    = prompt("Как се казваш - фамилия ?");
+        let userAge           = prompt("На колко си ?");
+        let userGender        = prompt("Какъв пол си ?");
+
+        console.log(`Първо име ${userFirstName}`);
+        console.log(`Фамилия ${userSecondName}`);
+        console.log(`Възраст ${userAge}`);
+        console.log(`Пол ${userGender}`);
+
+        let isUserGenderMale = userGender == "мъж";
+        let isUserGenderFemale = userGender == "жена";
+        let isUserUnderage = userAge <18;
+        let isUserAbove18 = userAge >=18;
+        let varMaleAbove18 = (isUserGenderMale) && (isUserAbove18);
+        let varFemaleAbove18 = (isUserGenderFemale) && (isUserAbove18);
+        let varMaleUnderage = (isUserGenderMale) && (isUserUnderage);
+        let varFemaleUnderage = (isUserGenderFemale) && (isUserUnderage);
+        let uniqueUserNumber = Math.floor((Math.random() * 100) + 1);
+        
+
+    
+        if(varMaleAbove18) {
+            console.log(`Здравейте г-н ${userSecondName}`);
+        } 
+        else if(varFemaleAbove18) {
+            console.log(`Здравейте г-жо ${userSecondName}`)
+        } 
+        else if(varMaleUnderage) {
+            console.log("Здрасти малкия, не пускаме дечица тука - бягай за бира")
+        } 
+        else if(varFemaleUnderage) {
+            console.log("Здрасти малката, не пускаме дечица тука - отивай да си играеш")
+        }
+                 
+        alert(`Добре дошъл в мазето на баба ${userFirstName} ${userSecondName}`)
+        alert(`Ти се идентифицира с номер ${uniqueUserNumber}`)
+        alert(`Ти си на ${userAge}`)
+
+        let charVino = "ябълково вино";
+        let charMeso = "пушено месо";
+        let charMarmalad = "сливов мармалад";
+        let charChushki = "мариновани чушки";
+        let charKasichka = "прасенце касичка";
+        let vinoLitra = 10;
+        let mesoKg = 5;
+        let marmaladBurkani = 9;
+        let chushkiBurkani = 4;
+        let kasichkaLv = 184.35;
+        let vinoNumber = (`C7544_${vinoLitra}`);
+        let mesoNumber = (`M7441_${mesoKg}`);
+        let marmaladNumber = (`S6491_${marmaladBurkani}`);
+        let chushkiNumber = (`P7485_${chushkiBurkani}`);
+        let kashichkaNumber = (`B6584_${kasichkaLv}`);
+
+        alert(`Отчет за продуктите в мазето`);
+        const vino = {Продукт:`${charVino}`, Брой:`${vinoLitra}`, новСериенНомер:`${vinoNumber}`}
+        const meso = {Продукт:`${charMeso}`, Брой:`${mesoKg}`, новСериенНомер:`${mesoNumber}`}
+        const marmalad = {Продукт:`${charMarmalad}`, Брой:`${marmaladBurkani}`, новСериенНомер:`${marmaladNumber}`}
+        const chushki = {Продукт:`${charChushki}`, Брой:`${chushkiBurkani}`, новСериенНомер:`${chushkiNumber}`}
+        const kasichka = {Продукт:`${charKasichka}`, Брой:`${kasichkaLv}`, новСериенНомер:`${kashichkaNumber}`}
+
+        console.table([vino, meso, marmalad, chushki, kasichka]);
+          
+        
+    if(isUserAbove18) {
+        var charityAnswer = prompt(`Желаете ли дарите пари? да/не`);
+        
+    }
+    var charityYes = charityAnswer == "да";
+    var charityNo = charityAnswer == "не"; 
+    if(isUserAbove18 && charityNo) {
+            alert(`Какво разочарование!`); }
+
+    if(isUserAbove18 && charityYes) {
+            alert(`Хубаво е да има повече хора като теб`);
+                let charity = prompt('Въведете сума за дарение');
+                let charity20 = 0;
+                charity20 = (+charity + (0.2 * +charity));
+                    
+            alert(`Сумата, която трябва да дарите с 20% обложен данък е ${charity20}`);}
+            
+        else {};
+
+    </script>
+
+</body>
+</html>

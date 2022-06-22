@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+
+let welcome = prompt(`Добро дошли в крипто борса "Джунгла", искате ли да си купите малко кинти? да/не`)
+let welcomeAnswerYes = welcome == "да";
+let welcomeAnswerNo = welcome == "не";
+
+let cryptoCriptomaza = "Criptomaza";
+let cryptoSharo = "Sharo";
+let cryptoBitcat = "Bitcat";
+let cryptoETorium = "eTorium";
+let cryptoTiger = "Tiger";
+
+let priceCriptomaza = 10;
+let priceSharo = 0.5;
+let priceBitcat = 100000;
+let priceETorium = 2;
+let priceTiger = 50;
+
+const pricegift = 100;
+let cryptoQuestionCurency;
+let cryptoQuestionQuantity;
+let cryptoQuestionAmount;
+let cryptoQuestionBalance;
+
+
+if(welcomeAnswerNo) {
+    alert(`Благодаря че НЕ пазарувахте при нас, хайде чупката.`); 
+    throw ``;
+}
+
+    else {
+        alert(`На вашето внимание актуални валути: ${cryptoCriptomaza}, ${cryptoSharo}, ${cryptoBitcat}, ${cryptoETorium}, ${cryptoTiger}!`)
+        cryptoQuestionCurency = prompt(`Имате бонус 100$ от нас. Коя валута желаете да закупите?`);
+        cryptoQuestionQuantity = prompt(`Изберете количество`);
+    
+
+        if(cryptoQuestionCurency == cryptoCriptomaza) {
+        cryptoQuestionAmount = (+priceCriptomaza * +cryptoQuestionQuantity); }
+
+        if(cryptoQuestionCurency == cryptoSharo) {
+        cryptoQuestionAmount = (+priceSharo * +cryptoQuestionQuantity); }
+
+        if(cryptoQuestionCurency == cryptoBitcat) {
+        cryptoQuestionAmount = (+priceBitcat * +cryptoQuestionQuantity); }
+
+        if(cryptoQuestionCurency == cryptoETorium) {
+        cryptoQuestionAmount = (+priceETorium * +cryptoQuestionQuantity); }
+
+        if(cryptoQuestionCurency == cryptoTiger) {
+        cryptoQuestionAmount = (+priceTiger * +cryptoQuestionQuantity); }
+        
+    }
+
+    if(cryptoQuestionAmount > pricegift) {
+        alert(`Много си алчен, няма място за теб в моя магазин. Сбогом`); 
+        throw ``; }
+        
+        else {
+            cryptoQuestionBalance = (pricegift - (+cryptoQuestionAmount));
+            let balanceQuestion;
+           
+            alert(`Вие станахте горд собственик на ${cryptoQuestionQuantity} единици от валутата ${cryptoQuestionCurency}. Покупката ви струваше ${cryptoQuestionAmount}$ рестото ви е ${cryptoQuestionBalance}$.`); 
+            balanceQuestion = prompt(`Ти си вече по-богат! Искаш ли да ти покажа колко много парички имаш?`);
+            let balanceQuestionYes = balanceQuestion == "да";
+            let balanceQuestionNo = balanceQuestion == "не";
+            
+            if(balanceQuestion = balanceQuestionYes) {
+                alert(`Ти имаш точно ${cryptoQuestionQuantity} единици от валутата ${cryptoQuestionCurency} на стойност ${cryptoQuestionAmount}`); 
+                alert(`За мен беше удоволствие, че избрахте нашия магазин. До нови срещи!`);
+            }
+            else {
+                alert(`Ти губиш! Хайде да си ходиш!`);
+            } 
+        }
+
+
+
+</script>
+
+</body>
+</html>

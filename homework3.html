@@ -75,20 +75,19 @@
 
         console.table([vino, meso, marmalad, chushki, kasichka]);
           
-        
+        let charityAnswer;    
     if(isUserAbove18) {
-        var charityAnswer = prompt(`Желаете ли дарите пари? да/не`);
+        charityAnswer = prompt(`Желаете ли дарите пари? да/не`);
         
     }
-    var charityYes = charityAnswer == "да";
-    var charityNo = charityAnswer == "не"; 
+    let charityYes = charityAnswer == "да";
+    let charityNo = charityAnswer == "не"; 
     if(isUserAbove18 && charityNo) {
             alert(`Какво разочарование!`); }
 
     if(isUserAbove18 && charityYes) {
             alert(`Хубаво е да има повече хора като теб`);
                 let charity = prompt('Въведете сума за дарение');
-                let charity20 = 0;
                 charity20 = (+charity + (0.2 * +charity));
                     
             alert(`Сумата, която трябва да дарите с 20% обложен данък е ${charity20}`);}

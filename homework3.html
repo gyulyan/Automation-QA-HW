@@ -83,16 +83,19 @@
     let charityYes = charityAnswer == "да";
     let charityNo = charityAnswer == "не"; 
     if(isUserAbove18 && charityNo) {
-            alert(`Какво разочарование!`); }
+            alert(`Какво разочарование!`); 
+    }
 
     if(isUserAbove18 && charityYes) {
             alert(`Хубаво е да има повече хора като теб`);
                 let charity = prompt('Въведете сума за дарение');
                 charity20 = (+charity + (0.2 * +charity));
                     
-            alert(`Сумата, която трябва да дарите с 20% обложен данък е ${charity20}`);}
+            alert(`Сумата, която трябва да дарите с 20% обложен данък е ${charity20}`);
+    }
             
-        else {};
+        else {
+        };
 
     </script>
 

@@ -36,6 +36,7 @@
         if(varMaleAbove18) {
             console.log(`Здравейте г-н ${userSecondName}`);
         } 
+        
         else if(varFemaleAbove18) {
             console.log(`Здравейте г-жо ${userSecondName}`)
         } 
@@ -78,20 +79,20 @@
         let charityAnswer;    
     if(isUserAbove18) {
         charityAnswer = prompt(`Желаете ли дарите пари? да/не`);
-        
     }
     let charityYes = charityAnswer == "да";
     let charityNo = charityAnswer == "не"; 
-    if(isUserAbove18 && charityNo) {
+   
+        if(isUserAbove18 && charityNo) {
             alert(`Какво разочарование!`); 
     }
 
     if(isUserAbove18 && charityYes) {
-            alert(`Хубаво е да има повече хора като теб`);
+            
+        alert(`Хубаво е да има повече хора като теб`);
                 let charity = prompt('Въведете сума за дарение');
                 charity20 = (+charity + (0.2 * +charity));
-                    
-            alert(`Сумата, която трябва да дарите с 20% обложен данък е ${charity20}`);
+        alert(`Сумата, която трябва да дарите с 20% обложен данък е ${charity20}`);
     }
             
         else {
